@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/389a72a903.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--header section of the site-->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/daniel (1).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Executive Virtual Assistant</p>
+            <h1>Hi,I'm <span>Daniel</span> welcome to my page</h1>
+        </div>
+    </div>
+</div>
+
+<!--About section of the site-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/daniel.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet assumenda eligendi cum aut. Nostrum omnis labore ipsam alias obcaecati error saepe, veniam non dolor consequatur facilis? Vel dicta ea iusto?</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Scheduling</span><br>Meetings</li>
+                        <li><span>Web Development</span><br>Web and app Development</li>
+                        <li><span>Travel Arrangements</span><br>Visa Requirements</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Dec 2019 - Sept 2021</span><br>Administrative Assistant</li>
+                        <li><span>Jan 2021 - Dec 2021</span><br>Office Assistant</li>
+                        <li><span>April 2020 - Oct 2021</span><br>Village Team community volunteer, African Humanitarian Action</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>May 2022-Dec 2025</span><br>African Leadership University - Kigali, Rwanda
+                            Bachelor's Degree in Software Engineering</li>
+                        <li><span>May 2022-Sept 2022</span><br>ALX Virtual Assistant Course, Honors</li>
+                        <li><span>Jan 2018- Nov 2019</span><br>Uganda Advanced Certificate of Education (UACE)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--service section-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos ipsum cumque voluptas, quae ex quam impedit aliquid, vel cum illo? Quod voluptatem voluptatum explicabo,
+                quasi magnam ab aspernatur dolorum.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-clock"></i>
+                <h2>Executive Virtual Assistant</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos ipsum cumque voluptas, quae ex quam impedit aliquid, vel cum illo? Quod voluptatem voluptatum explicabo,
+                quasi magnam ab aspernatur dolorum.</p>
+                <a href="#">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos ipsum cumque voluptas, quae ex quam impedit aliquid, vel cum illo? Quod voluptatem voluptatum explicabo,
+                quasi magnam ab aspernatur dolorum.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--portfolio section-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>connect with people across the globe,download on app store</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-2.png">
+                <div class="layer">
+                    <h3>Virtual Service</h3>
+                    <p>connect with me across the globe,for virtual assistance.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-3.png">
+                <div class="layer">
+                    <h3>E-commerce</h3>
+                    <p>connect and buy across the globe,download on both app store and play store</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------contacts section------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>d.burongu@alustudent.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0789231929</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100008526553831"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/d_burongu"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/daniel_burongu/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/danielburongu/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="image/DANIEL BURONGU _Resume.docx.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright 2023 @<i class="fa-solid fa-heart"></i> Danielburongu.</p>
+    </div>
+</div>
+
+
+
+<!--JavaScript content-->
+<script src="script.js"></script>
+
+</body>
+</html>
